@@ -1,0 +1,44 @@
+<!-- PARTIAL: topbar + navigazione + menu mobile (assemblato in index.html; build automatica in Fase 11) -->
+<div class="topbar">
+  <div class="wrap">
+    <span data-i18n="topline">✦ Spedizione gratuita in Italia sopra €79 · Prova grafica inclusa</span>
+    <div style="display:flex;gap:14px;align-items:center">
+      <div class="socials" id="soc1"></div>
+      <div class="lang"><button id="langIT" class="on" onclick="setLang('it')">IT</button><button id="langEN" onclick="setLang('en')">EN</button></div>
+    </div>
+  </div>
+</div>
+
+<header class="nav scrolled" id="nav" style="top:36px">
+  <div class="wrap nav-in">
+    <a href="#/home" class="brand" data-nav="home"><img src="assets/images/logo.png" alt="INGLY DESIGN logo" width="44" height="44"><span>INGLY<small>DESIGN · ITALY</small></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#/home" data-nav="home" class="active">🏠 <span data-i18n="nHome">Home</span></a>
+      <a href="#/shop" data-nav="shop">🛒 Shop</a>
+      <a href="#/digital" data-nav="digital">💾 <span data-i18n="nDig">Digitale</span></a>
+      <a href="#/business" data-nav="business">🏢 B2B·B2C</a>
+      <a href="#/portfolio" data-nav="portfolio">🖼 Portfolio</a>
+      <a href="#/about" data-nav="about">🏭 <span data-i18n="nAbout">Chi Siamo</span></a>
+      <a href="#/faq" data-nav="faq">❓ FAQ</a>
+      <a href="#/quote" data-nav="quote">📋 <span data-i18n="nQuote">Preventivo</span></a>
+    </nav>
+    <div class="nav-acts">
+      <button class="icon-btn" aria-label="Wishlist" onclick="go('shop')"><svg viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 2-3.2 2-5a5 5 0 0 0-9-3 5 5 0 0 0-9 3c0 1.8.5 3.5 2 5l7 7z"/></svg><span class="badge" id="wishBadge">0</span></button>
+      <button class="icon-btn" aria-label="Cart" onclick="openCart()"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1.6"/><circle cx="19" cy="21" r="1.6"/><path d="M2 2h3l3.2 13.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L23 7H6"/></svg><span class="badge" id="cartBadge">0</span></button>
+      <button class="icon-btn burger" aria-label="Menu" onclick="document.getElementById('mm').classList.add('open')"><svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h12"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mm">
+  <button class="mclose" onclick="document.getElementById('mm').classList.remove('open')">✕</button>
+  <a href="#/home" data-nav="home" style="transition-delay:.1s">🏠 <span data-i18n="nHome">Home</span></a>
+  <a href="#/shop" data-nav="shop" style="transition-delay:.15s">🛒 Shop</a>
+  <a href="#/digital" data-nav="digital" style="transition-delay:.2s">💾 <span data-i18n="nDig">Digitale</span></a>
+  <a href="#/business" data-nav="business" style="transition-delay:.25s">🏢 B2B·B2C</a>
+  <a href="#/portfolio" data-nav="portfolio" style="transition-delay:.3s">🖼 Portfolio</a>
+  <a href="#/about" data-nav="about" style="transition-delay:.35s">🏭 <span data-i18n="nAbout">Chi Siamo</span></a>
+  <a href="#/faq" data-nav="faq" style="transition-delay:.4s">❓ FAQ</a>
+  <a href="#/quote" data-nav="quote" style="transition-delay:.45s">📋 <span data-i18n="nQuote">Preventivo</span></a>
+  <div class="socials" id="soc2"></div>
+</div>

@@ -1,0 +1,10 @@
+/* ============ RESPONSIVE (globale) ============
+   Strategia: le media query specifiche restano ACCANTO al loro componente
+   (in layout/components/pages) per non alterare la cascata.
+   Qui vivono solo le regole globali. Breakpoint del progetto:
+   340 / 480 / 560 / 640 / 700 / 820 / 860 / 900 / 920 / 940 / 980 / 1080 / 1160 px */
+@media (prefers-reduced-motion:reduce){.laserfx,canvas#fx{display:none}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
