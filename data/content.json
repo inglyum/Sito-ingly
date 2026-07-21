@@ -3349,6 +3349,9 @@
   "img/cat-stagionale.webp": [
    400,
    800
+  ],
+  "img/sponsor-1.webp": [
+   400
   ]
  },
  "PROMO": {
@@ -3384,6 +3387,17 @@
    "en": "Want to appear here? Get in touch."
   },
   "ctaLink": "#/contatti",
-  "lista": []
+  "lista": [
+   {
+    "nome": "Nuovo partner",
+    "link": "https://www.facebook.com/profile.php?id=61571904102246",
+    "livello": "gold",
+    "desc": {
+     "it": "",
+     "en": ""
+    },
+    "logo": "img/sponsor-1.webp"
+   }
+  ]
  }
 }
